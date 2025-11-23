@@ -4,7 +4,7 @@ This repository contains a self‑contained web application that helps MapleStor
 
 Overview
 
-The MapleStory Genesis liberation system requires players to accumulate a set number of Traces of Darkness through weekly and monthly boss fights. Each boss awards a fixed number of traces, which are divided equally among party members, and the Genesis Pass (if owned) triples the traces a player earns. The missions proceed through specific bosses in sequence—Lotus, Damien, Lucid, Will, Gloom, Darknell, Verus Hilla and Black Mage—requiring 500 or 1,000 traces per quest. Clearing all eight missions liberates the weapon and unlocks access to the Genesis weapon’s full power.
+The MapleStory Genesis liberation system requires players to accumulate a set number of Traces of Darkness through weekly and monthly boss fights. Each boss awards a fixed number of traces, which are divided equally among party members, and the Genesis Pass (if owned) triples the traces a player earns. The missions proceed through specific bosses in sequence Lotus, Damien, Lucid, Will, Gloom, Darknell, Verus Hilla and Black Mage requiring 500 or 1,000 traces per quest. Clearing all eight missions liberates the weapon and unlocks access to the Genesis weapon’s full power.
 
 Several guides note the trace values for each boss difficulty and emphasize that traces are split evenly among party members. For example, Hard/Extreme Lotus and Hard Damien award 50 traces, Hard Lucid 65, Hard Will and Darknell 75, Hard Gloom 65 and Hard Verus Hilla 90. The Black Mage (Extreme mode) is a monthly boss awarding 600 traces. The Genesis Pass triples traces earned after division, and this bonus applies only to the pass holder.
 
