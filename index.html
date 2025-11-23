@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MapleStory Genesis Liberation Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Genesis Weapon Planner</p>
+      <h1>Track your MapleStory Genesis Liberation</h1>
+      <p class="lede">
+        Plan how many weeks remain until your Genesis weapon is fully liberated. Adjust
+        trace requirements, weekly gains, and Genesis Pass bonuses to match your server and party setup.
+      </p>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="panel">
+      <h2>Inputs</h2>
+      <div class="grid">
+        <label class="field">
+          <span>Current stage</span>
+          <select id="stage-select"></select>
+        </label>
+
+        <label class="field">
+          <span>Traces already deposited in this stage</span>
+          <input id="deposited" type="number" min="0" value="0" />
+        </label>
+
+        <label class="field">
+          <span>Traces currently held (in inventory)</span>
+          <input id="held" type="number" min="0" value="0" />
+        </label>
+
+        <label class="field">
+          <span>Weekly trace income</span>
+          <input id="weekly" type="number" min="0" value="6" />
+          <small>Estimate total traces you earn from your weekly boss clears (e.g., Black Mage, Seren, Kaling).</small>
+        </label>
+
+        <label class="field">
+          <span>Genesis Pass weekly bonus</span>
+          <input id="pass" type="number" min="0" value="0" />
+          <small>Set this to the extra traces your pass provides per week, if applicable.</small>
+        </label>
+
+        <label class="field">
+          <span>Starting from week of</span>
+          <input id="start-date" type="date" />
+          <small>Defaults to today if left empty.</small>
+        </label>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel__header">
+        <h2>Stage requirements</h2>
+        <button id="reset-stages" class="ghost">Restore defaults</button>
+      </div>
+      <p class="muted">Edit the traces required for each stage to mirror your server’s Genesis liberation rules.</p>
+      <div class="stage-table" id="stage-table"></div>
+    </section>
+
+    <section class="panel" id="results">
+      <h2>Results</h2>
+      <div class="result-grid">
+        <div class="metric">
+          <p class="metric__label">Traces needed</p>
+          <p class="metric__value" id="traces-needed">0</p>
+          <p class="metric__hint">Across the rest of the liberation path.</p>
+        </div>
+        <div class="metric">
+          <p class="metric__label">Weeks remaining</p>
+          <p class="metric__value" id="weeks">0</p>
+          <p class="metric__hint">Assuming weekly income and pass bonus above.</p>
+        </div>
+        <div class="metric">
+          <p class="metric__label">Projected liberation date</p>
+          <p class="metric__value" id="date">—</p>
+          <p class="metric__hint">Calculated from the starting week.</p>
+        </div>
+      </div>
+      <div id="timeline"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      This tool keeps everything client-side: update stage requirements, weekly trace gains,
+      and Genesis Pass bonuses to fit your squad’s plan.
+    </p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
